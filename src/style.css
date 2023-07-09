@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'PoetsenOne';
+  src: url('../src/assets/fonts/PoetsenOne-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PoetsenOne-bold';
+  src: url('../src/assets/fonts/PoetsenOne-Regular.ttf');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: url('./assets/fonts/Montserrat/Montserrat-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-ex-bold';
+  src: url('./assets/fonts/Montserrat/Montserrat-ExtraBold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.gallery-header, .price-header, .services-header, .promotions-header, .rules-header, .reviews-header, .about-header, .map-ya-header{
+  color: #9D9D9D;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Montserrat-ex-bold";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+@media (max-width: 640px) {
+
+}
+@media (min-width: 641px) and (max-width: 1200px) {
+  .header{
+    position: fixed;
+    z-index: 9999;
+    background-color: #fffffF !important;
+    top: 0;
+  }
+   .phone{
+       padding-right: 80px;
+   }
+   .services-card{
+      justify-content: space-around !important;
+      flex-wrap: wrap;
+
+   }
+   .services-card-item{
+      margin: 0 !important;
+      width: 51% !important;
+   }
+   .advantages-item{
+      width: 55% !important;
+      display: flex !important;
+      align-items: center !important;
+      padding: 20px !important;
+      flex-direction: column !important;
+      text-align: center;
+   }
+   .advantages-item img{
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+   }
+   .advantages-item span{
+      width: 70%;
+   }
+   .advantages-list{
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+   .content-box{
+    margin-top: 20%;
+   }
+}
+@media (min-width: 1201px) {}
