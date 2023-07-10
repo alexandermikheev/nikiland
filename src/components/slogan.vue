@@ -27,6 +27,7 @@
     height: 599px;
     position: relative;
     z-index: 1;
+    margin-top: 180px;
 }
 #slogan span {
     position: relative;

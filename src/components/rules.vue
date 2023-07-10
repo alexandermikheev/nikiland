@@ -81,34 +81,95 @@
 <template>
     <div class="cloud-1">
     <div class="content">
-        <img src="../assets/Rules-logo.svg" alt="Логотип" class="logo">
-        <h2>Текст пунктами:</h2>
+        <img src="../assets/Rules-logo.svg" alt="Логотип" class="rules-logo">
+        <h2>Правила посещения</h2>
         <ul>
-            <li>Пункт 1</li>
-            <li>Пункт 2</li>
-            <li>Пункт 3</li>
+            <li class="rusles-card-item">Родителю выдается карта, по которой учитывается время нахождения ребенка на игровой площадке, забрать ребенка может только родитель при предъявлении карты.</li>
+            <li class="rusles-card-item">На время посещения детьми игровой площадки одному из родителей разрешается находиться на территории детской игровой площадки.</li>
+            <li class="rusles-card-item">При передаче ребенка сотрудникам детской игровой площадки родитель снимает с ребенка верхнюю одежду и обувь. При этом необходимо проверить, нет ли у ребенка ценных вещей, вещей, представляющих опасность, продуктов питания, в том числе конфет и жевательных резинок. Сотрудники детской игровой площадки не несут ответственность за вещи, утерянные ребенком.</li>
+            <li class="rusles-card-item">Родители, оставляющие ребенка на детской игровой площадке, обязаны отвечать на телефонные звонки в течении всего времени пребывания ребенка, а также находиться на территории ТЦ.</li>
+            <li class="rusles-card-item">Детскую игровую площадку могут посещать только здоровые (не имеющие явных признаков респираторных и других заболеваний, передающихся воздушно-капельным или другим контактным путем). Сотрудник может отказать в приеме ребенка с явными признаками респираторных и инфекционных заболеваний.</li>
+            <li class="rusles-card-item">Сотрудник детской игровой площадки может попросить забрать ребенка досрочно, если он ведет себя агрессивно по отношению к другим детям и игнорирует замечания, а также в случае проявления признаков простудного заболевания у ребенка.</li>
+            <li class="rusles-card-item">В случае необходимости сотрудник детской игровой площадки вправе оказать первую медицинскую помощь, в том числе вызвать скорую помощь.</li>
+            <li class="rusles-card-item">Персонал детской игровой площадки не оказывает образовательных и воспитательных услуг.</li>
+            <li class="rusles-card-item">Максимальное непрерывное время пребывания ребенка на игровой площадке составляет не более 4х часов.</li>
+            <li class="rusles-card-item">Запрещается менять подгузники и кормить детей на территории детской игровой площадки.</li>
+            <li class="rusles-card-item">Посещение детской игровой площадки осуществляется строго в чулочно-носочных изделиях. В случае необходимости, сотрудники игровой площадки предоставят одноразовые носки для взрослого (бесплатно).</li>
+            <li class="rusles-card-item">Возврат денежных средств за неиспользованное время не производится, поминутной тарификации не предусмотрено, ребенок может доиграть оставшееся время позже в течении текущего дня.</li>
+            <li class="rusles-card-item">Передача родителем (ответственным лицом) ребенка сотрудникам на детскую игровую площадку автоматически означает ознакомление с Правилами площадки и полное согласие с ними.</li>
         </ul>
+
     </div>
 </div>
+<div class="oblaco-1"></div>
 </template>
 
 <style>
     .cloud-1 {
-        background-color: #F6C322;
-        background-image: url("../assets/oblaco-white.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 20px;
-        text-align: center;
-        height: 1472px;
+
+    background-color: #F6C322;
+    padding: 20px;
+    height: 1472px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
     }
     
     .content {
-        padding: 20px;
+        margin-top: 88px;
+        width: 80%;
+        position: relative;
+        z-index: 1;
     }
     
-    img.logo {
-        width: 100px;
-        height: 100px;
+    .rules-logo {
+        width: 100%;
+        height: 149.136px;
+
     }
+    .content ul{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        color: #676190;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 111%;
+        letter-spacing: -0.09px;
+        position: relative;
+        z-index: 9999;
+    }
+        .content h2 {
+            color: #695C91;
+            font-family: "PoetsenOne";
+            font-size: 39px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            text-align: center;
+}
+
+    .content li {
+        padding-bottom: 10px;
+        list-style-image: url(../assets/li.svg), url(../assets/li1.svg), url(../assets/li2.svg), url(../assets/li3.svg), url(../assets/li4.svg),;
+} 
+.oblaco-1{
+    background-image: url(/src/assets/oblaco-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    left: 10%;
+}
+
 </style>

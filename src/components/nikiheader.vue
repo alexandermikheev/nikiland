@@ -40,6 +40,7 @@ html{
 }
 
 .header{
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -47,6 +48,10 @@ html{
     padding-bottom: 13px;
     border-bottom: 2px solid #9D9D9D;
     background: url(../assets/header/shar.svg) top left no-repeat, url(../assets/header/blue.svg) top right no-repeat;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: #fff;
 }
 .logo{
     padding-right: 52px;
