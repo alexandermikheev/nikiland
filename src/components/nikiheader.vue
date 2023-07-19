@@ -18,21 +18,47 @@
         </div>
         <nav class="navbar-list">
             <ul class="navbar-items">
-                <a href="#slogan"><li  class="navbar-item">ГЛАВНАЯ</li></a>
-                <a href="#services-box"><li class="navbar-item">УСЛУГИ</li></a>
-                <a href="#price"><li class="navbar-item">ПРАЙС</li></a>
-                <a href="#promotions"><li class="navbar-item">АКЦИИ</li></a>
-                <a href="#rules"><li class="navbar-item">ПРАВИЛА</li></a>
-                <a href="#about"><li class="navbar-item">ПАРТНЁРАМ</li></a>
+                <a v-for="(item, index) in menuItems" :key="index" :href="item.link"><li class="navbar-item">{{ item.name }}</li></a>
             </ul>
         </nav>
+                <!-- mobile -->
+    <div class="burger" >
+        <img src="../assets/header/burger_menu/menu.svg" class="burger__but">
     </div>
+
+    <div class="burger__menu" >
+        <div class="burger__empty"></div>
+        <div class="burger__wrap">
+
+        </div>
+    </div>
+    </div>
+
 </div>
 </template>
 <script >
- methods:{
-
-}
+export default{
+    data() {
+        return {
+            menuItems:
+            [
+                {name: 'ГЛАВНАЯ', link: '#slogan'},
+                {name: 'УСЛУГИ', link: '#services-box'},
+                {name: 'ПРАЙС',link: '#price'},
+                {name: 'АКЦИИ', link: '#promotions'},
+                {name: 'ПРАВИЛА', link: '#rules'},
+                {name: 'ПАРТНЁРАМ', link: '#about'},
+            ],      
+            isOpened: false, 
+            isNavigationFixed: true,
+            isPageMenu: false,
+            actualSubMenu: null,
+            actualElement: null,
+            categories: null,
+            namesList: [],
+        }
+    },
+    }
 </script>
 <style >
 html{
@@ -97,7 +123,7 @@ html{
     flex-wrap: wrap;
 }
 .navbar-item:hover{
-    color: red;
+    color: #695C91;
 }
 .navbar-items a:nth-child(n+2):nth-last-child(n+1){
     box-sizing: border-box;
@@ -123,16 +149,5 @@ html{
     line-height: normal;
     text-decoration: none;
 }
-
-@media (max-width: 640px) {
-
- }
-@media (min-width: 641px) and (max-width: 1200px) {
-    .phone{
-
-        padding-right: 80px;
-    }
-}
-@media (min-width: 1201px) {}
 
 </style>

@@ -56,6 +56,9 @@ body{
     z-index: 9999;
     background-color: #fffffF !important;
     top: 0;
+    width: 100%;
+    justify-content: space-around !important;
+
   }
    .phone{
        padding-right: 80px;
@@ -90,6 +93,18 @@ body{
    }
    .content-box{
     margin-top: 20%;
+   }
+   .navbar-list{
+    display: none !important;
+   }
+   .burger img{
+    position: static ;
+    width: 4vw ;
+   }
+   .burger{
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
    }
 }
 @media (min-width: 1201px) {}
