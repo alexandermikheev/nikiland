@@ -13,7 +13,7 @@
                 </ul>
             </div>
         </div>
-            <nav class="footer-navbar-list">
+            <!-- <nav class="footer-navbar-list">
             <ul class="footer-navbar-items">
                 <a href="#slogan"><li  class="footer-navbar-item">ГЛАВНАЯ</li></a>
                 
@@ -28,7 +28,7 @@
                 <a href="#reviews"><li class="footer-navbar-item">ОТЗЫВЫ</li></a>
 
             </ul>      
-        </nav>
+        </nav> -->
     </div>
     <div class="lic">© 2023 "НИКИ ЛЭНД". Все права защищены.</div>
 </template>
@@ -39,7 +39,7 @@
 .footer{
     display: flex;
     padding-top: 40px;
-    justify-content: center;
+    justify-content: space-around;
 }
 .footer-phone a{
     display: flex;

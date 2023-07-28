@@ -87,6 +87,7 @@
         margin-bottom: 64px;
         padding-top: 30px;
         padding-bottom: 30px;
+        box-sizing: content-box;
     }
     .advantages-header-text{
         color: #695C91;

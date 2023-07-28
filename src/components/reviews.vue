@@ -48,12 +48,19 @@
 </template>
 
 <style >
+#reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .reviews-card{
     display: inline-flex;
     align-items: flex-start;
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
+    width: 80%;
     }
 .reviews-card-item{
     padding: 20px;

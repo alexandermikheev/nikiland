@@ -27,6 +27,7 @@
     height: 599px;
     position: relative;
     z-index: 1;
+    margin-top: 10%;
 }
 #slogan span {
     position: relative;
@@ -132,5 +133,23 @@
     height: 85.81px;
 }
 
+@media (max-width: 640px) {
 
+}
+@media (min-width: 641px) and (max-width: 1200px) {
+  .header{
+    position: fixed;
+    z-index: 9999;
+    background-color: #fffffF !important;
+    top: 0;
+    width: 100%;
+    justify-content: space-around !important;
+
+  }
+   .content-box{
+    margin-top: 20%;
+   }
+
+}
+@media (min-width: 1201px) {}
 </style>
