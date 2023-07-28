@@ -67,6 +67,92 @@ body {
 .header {
     box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
     background: url(../assets/header/shar.svg) top left no-repeat, url(../assets/header/blue.svg) top right no-repeat;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header__burger-btn {
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.header__burger-btn span {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    left: 5px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.header__burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.header.opened .header__burger-btn span {
+    background-color:#695C91;
+;
+}
+
+.header.opened .header__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.opened .header__burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.opened .header__burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.logo {
+    display: block;
+}
+
+.logo__img {
+    width: 200px;
+}
+.menu{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.menu__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #9D9D9D;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 44px;
 }
 .menu__item:hover{
     color: #695C91;
@@ -208,7 +294,7 @@ body {
         margin: 0;
         padding: 0;
         }
-    .social-items li:nth-child(n+3):nth-last-child(n+1){
+    .social-items li:nth-child(n+2):nth-last-child(n+1){
         box-sizing: border-box;
         padding-left: 29px;
     }
