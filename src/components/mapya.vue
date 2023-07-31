@@ -24,6 +24,7 @@
 .map-ya-box{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .map-ya-item-header{
   color: #9D9D9D;

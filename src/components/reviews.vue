@@ -36,11 +36,11 @@
 </div>
 <div id="about">
     <div class="about-header">
-        ЕСЛИ ВЫ ХОТИТЕ ОТКРЫТЬ НАШ ЦЕНТР В СВОЁМ ТЦ ОБРАТИТЕСЬ ПО ТЕЛЕФОНУ:
+        ЕСЛИ ВЫ ХОТИТЕ ОТКРЫТЬ НАШ ЦЕНТР В СВОЁМ ТЦ ОБРАТИТЕСЬ ПО EMAIL:
     </div>
     <div class="phone-info">
         <div class="phone-about">
-            <a href="tel:+78008008080">8-800-800-80-80</a>
+            <a href="mailto:info@nikiland.club">info@nikiland.club</a>
         </div>
     </div>
 

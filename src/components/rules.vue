@@ -9,7 +9,7 @@
 <div class="rules-card">
     <div class="rusles-card-box">
         <div class="rusles-card-logo"><img src="../assets/Rules-logo.svg" alt="" srcset=""></div>
-        <a href=""><div class="rusles-card-button">информация по ссылке</div></a>
+        <a href="НИКИ_ЛЭНД_правила_посещения.pdf"><div class="rusles-card-button">информация по ссылке</div></a>
     </div>
 </div>
 </template>
@@ -54,15 +54,37 @@
     letter-spacing: -0.09px;
 }
 
-@media (max-width: 640px) {
 
-}
+@media (min-width: 1201px) {}
 @media (min-width: 641px) and (max-width: 1200px) {
     .rules-card{
         background: url(../assets/Oblako1.svg) 0% 50%/30% no-repeat,url(../assets/Oblako2.svg) 100% 0%/30% no-repeat ;
     }
 }
-@media (min-width: 1201px) {}
+@media (max-width: 640px) {
+
+}
+@media (min-width: 376px) and (max-width: 425px){
+
+    .rules-card{
+        padding: 44px 0;
+    }
+    .rusles-card-button{
+        text-align: center;
+        font-size: 16px;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 375px){
+    .rules-card{
+        padding: 44px 0;
+    }
+    .rusles-card-button{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    }
 </style>
 
 

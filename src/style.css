@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   padding: 0;
@@ -47,56 +50,15 @@ body{
   padding-bottom: 40px;
   padding-top: 40px;
 }
-@media (max-width: 640px) {
-
-}
-@media (min-width: 641px) and (max-width: 1200px) {
-  .header{
-    position: fixed;
-    z-index: 9999;
-    background-color: #fffffF !important;
-    top: 0;
-    width: 100%;
-    justify-content: space-around !important;
-
+@media (min-width: 376px) and (max-width: 425px){
+  .gallery-header, .price-header, .services-header, .promotions-header, .rules-header, .reviews-header, .about-header, .map-ya-header{
+    font-size: 24px;
   }
-   .phone{
-       padding-right: 80px;
-   }
-
-   .advantages-item{
-      width: 55% !important;
-      display: flex !important;
-      align-items: center !important;
-      padding: 20px !important;
-      flex-direction: column !important;
-      text-align: center;
-   }
-   .advantages-item img{
-    margin-right: 0 !important;
-    margin-bottom: 10px;
-   }
-   .advantages-item span{
-      width: 70%;
-   }
-   .advantages-list{
-    margin-left: 10%;
-    margin-right: 10%;
-   }
-   .content-box{
-    margin-top: 20%;
-   }
-   .navbar-list{
-    display: none !important;
-   }
-   .burger img{
-    position: static ;
-    width: 4vw ;
-   }
-   .burger{
-    display: flex;
-    justify-content: end;
-    padding-right: 80px;
-   }
 }
-@media (min-width: 1201px) {}
+@media (min-width: 320px) and (max-width: 375px){
+
+  .gallery-header, .price-header, .services-header, .promotions-header, .rules-header, .reviews-header, .about-header, .map-ya-header{
+    font-size: 24px;
+  }
+
+}

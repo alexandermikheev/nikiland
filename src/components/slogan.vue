@@ -133,23 +133,73 @@
     height: 85.81px;
 }
 
-@media (max-width: 640px) {
+
+#slogan span {
+    position: relative;
+    font-family: "PoetsenOne";
+    font-size: 36px;
+    color: #676190;
+    padding-left: 0;
+    z-index: 99;
+    display: flex;
+    width: 80%;
+    text-align: center;
+    margin: auto;
 
 }
-@media (min-width: 641px) and (max-width: 1200px) {
-  .header{
-    position: fixed;
-    z-index: 9999;
-    background-color: #fffffF !important;
-    top: 0;
-    width: 100%;
-    justify-content: space-around !important;
 
-  }
+@media (min-width: 1201px) {}
+
+@media (min-width: 641px) and (max-width: 1200px) {
    .content-box{
     margin-top: 20%;
    }
 
 }
-@media (min-width: 1201px) {}
+
+@media (max-width: 640px) {
+
+.content-box{
+    margin-top: 30%;
+   }
+.castle {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 0;
+    right: 0;
+}
+}
+@media (min-width: 376px) and (max-width: 425px){
+
+  #slogan {
+    margin-top: 164px;
+}
+.castle {
+    position: absolute;
+    width: 375px;
+    height: 151px;
+    top: 0;
+    right: 0;
+}
+.content-box {
+    height: 415px;
+}
+
+}
+@media (min-width: 320px) and (max-width: 375px){
+  #slogan {
+    margin-top: 164px;
+}
+.castle {
+    position: absolute;
+    width: 375px;
+    height: 151px;
+    top: 0;
+    right: 0;
+}
+.content-box {
+    height: 415px;
+}
+}
 </style>

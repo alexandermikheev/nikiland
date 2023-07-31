@@ -197,4 +197,372 @@
     width: 100%;
     top: -18%;
 }
+@media (min-width: 1201px) {}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+    .price-card{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 0;
+    margin-bottom: 67%;
+}
+.price-card-list{
+    padding: 75px 0;
+    width: 100%;
+    margin-bottom: 366px;
+    margin-bottom: 170%;
+    margin-top: 5%;
+}
+.price-card-aboniment {
+    align-items: flex-start;
+    margin-top: 119%;
+    background: url(../assets/price-footer/yellow-smail-price.svg) 144% 54%/81% no-repeat;
+}
+.price-card-aboniment-header {
+    margin-left: 26px;
+}
+.price-card-aboniment-quantity{
+    margin-left: 10px;
+}
+.smail-grut-fil{
+    position: absolute;
+    background: url(../assets/smail-grut-fil.svg);
+    width: 299px;
+    height: 338px;
+    top: 400px;
+    left: 39px;
+}
+.smail-grut-blue{
+    position: absolute;
+    display: none;
+    width: 340px;
+    height: 338px;
+    top: 0%;
+    left: 20%;
+
+}
+.cloud{
+    top: 530px;
+    left: 286px;
+}
+.cloud1{
+    top: 433px;
+    left: 300px;
+}
+@media (min-width: 1001px) and (max-width: 1200px){
+    .price-card-aboniment {
+    align-items: flex-start;
+    margin-top: 119%;
+    background: url(../assets/price-footer/yellow-smail-price.svg)  85% 55%/30% no-repeat;
+}
+.price-card-aboniment-quantity span {
+    font-size: 37px;
+}
+.price-card-aboniment-header, .card-aboniment-header {
+    font-family: 'PoetsenOne';
+    color: #676091;
+    font-size: 24px;
+}
+.price-card-aboniment-header {
+    margin-left: 105px;
+}
+.card-aboniment-header-paragraf {
+    font-size: 14px;
+}
+.price-card-list{
+    background-size: 37%;
+    margin-bottom: 71%;
+}
+.smail-grut-fil{
+    position: absolute;
+    background: url(../assets/smail-grut-fil.svg) no-repeat;
+    background-size: 68%;
+    top: 121%;
+}
+.cloud {
+    top: 555px;
+    left: 190px;
+}
+.cloud1 {
+    top: 443px;
+    left: 285px;
+}
+.price-footer-header {
+    font-size: 16px;
+    margin: auto;
+}
+.price-footer {
+    height: 96px;
+}
+.footer-back{
+    background: url(/src/assets/price-footer/smail-blue.svg) -5% 69% no-repeat, url(/src/assets/price-footer/smail-j.svg) 98% -6% no-repeat;
+}
+
+}
+}
+@media (max-width: 640px) {
+.price-card{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 64% 0px;
+}
+.price-card-list{
+    padding: 75px 0;
+    width: 100%;
+    margin-bottom: 366px;
+    margin-bottom: 170%;
+    margin-top: 5%;
+}
+.price-card-aboniment {
+    align-items: flex-start;
+    margin-top: 119%;
+    background: url(../assets/price-footer/yellow-smail-price.svg) 144% 54%/81% no-repeat;
+}
+.price-card-aboniment-header {
+    margin-left: 26px;
+}
+.price-card-aboniment-quantity{
+    margin-left: 10px;
+}
+.smail-grut-fil{
+    position: absolute;
+    background: url(../assets/smail-grut-fil.svg);
+    width: 299px;
+    height: 338px;
+    top: 110%;
+    left: 39px;
+}
+.smail-grut-blue{
+    position: absolute;
+    display: none;
+    width: 340px;
+    height: 338px;
+    top: 0%;
+    left: 20%;
+
+}
+.cloud{
+    top: 530px;
+    left: 286px;
+}
+.cloud1{
+    top: 433px;
+    left: 300px;
+}
+.footer-back{
+    position: absolute;
+    background: url(/src/assets/price-footer/smail-blue.svg) -4% 96% no-repeat, url(/src/assets/price-footer/smail-j.svg) 93% -3% no-repeat;
+    height: 200px;
+    width: 100%;
+    top: -18%;
+}
+.price-footer-header{
+        margin-left: 0;
+        text-align: center;
+}
+
+}
+@media (min-width: 801px) and (max-width: 1000px){
+    .price-card-aboniment {
+    align-items: flex-start;
+    margin-top: 119%;
+    background: url(../assets/price-footer/yellow-smail-price.svg)  90% 54%/41% no-repeat;
+}
+.price-card-aboniment-quantity{
+    margin-left: 50px;
+}
+.price-card-aboniment-quantity span {
+    font-size: 63px;
+}
+.price-card-aboniment-header, .card-aboniment-header {
+    font-family: 'PoetsenOne';
+    color: #676091;
+    font-size: 24px;
+}
+.price-card-aboniment-header {
+    margin-left: 61px;
+}
+.card-aboniment-header-paragraf {
+    font-size: 14px;
+}
+.price-card-list{
+    background-size: 45%;
+    margin-bottom: 71%;
+}
+.smail-grut-fil{
+    position: absolute;
+    background: url(../assets/smail-grut-fil.svg) no-repeat;
+    background-size: 45%;
+    top: 121%;
+}
+.cloud {
+    top: 534px;
+    left: 143px;
+}
+.cloud1 {
+    top:  421px;
+    left: 184px;
+}
+.price-footer-header {
+    font-size: 16px;
+    margin: auto;
+}
+.price-footer {
+    height: 96px;
+}
+.footer-back{
+    background: url(/src/assets/price-footer/smail-blue.svg) -5% 69% no-repeat, url(/src/assets/price-footer/smail-j.svg) 98% -6% no-repeat;
+}
+
+}
+@media (min-width: 641px) and (max-width: 800px){
+    .price-card-aboniment {
+    align-items: flex-start;
+    margin-top: 119%;
+    background: url(../assets/price-footer/yellow-smail-price.svg) 106% 54%/48% no-repeat;
+}
+.price-card-aboniment-quantity span {
+    font-size: 37px;
+}
+.price-card-aboniment-header, .card-aboniment-header {
+    font-family: 'PoetsenOne';
+    color: #676091;
+    font-size: 24px;
+}
+.price-card-aboniment-header {
+    margin-left: 61px;
+}
+.card-aboniment-header-paragraf {
+    font-size: 14px;
+}
+.price-card-list{
+    background-size: 50%;
+    margin-bottom: 89%;
+}
+.smail-grut-fil{
+    position: absolute;
+    background: url(../assets/smail-grut-fil.svg) no-repeat;
+    background-size: 45%;
+    top: 121%;
+}
+.cloud {
+    top: 534px;
+    left: 143px;
+}
+.cloud1 {
+    top:  421px;
+    left: 184px;
+}
+.price-footer-header {
+    font-size: 16px;
+    margin: auto;
+}
+.price-footer {
+    height: 96px;
+}
+.footer-back{
+    background: url(/src/assets/price-footer/smail-blue.svg) -5% 69% no-repeat, url(/src/assets/price-footer/smail-j.svg) 98% -6% no-repeat;
+}
+
+}
+
+@media (min-width: 376px) and (max-width: 425px){
+    .price-card-aboniment {
+    align-items: flex-start;
+    margin-top: 119%;
+    background: url(../assets/price-footer/yellow-smail-price.svg) 106% 54%/48% no-repeat;
+}
+.price-card-aboniment-quantity span {
+    font-size: 37px;
+}
+.price-card-aboniment-header, .card-aboniment-header {
+    font-family: 'PoetsenOne';
+    color: #676091;
+    font-size: 24px;
+}
+.price-card-aboniment-header {
+    margin-left: 61px;
+}
+.card-aboniment-header-paragraf {
+    font-size: 14px;
+}
+.price-card-list{
+    background-size: 92%;
+}
+.smail-grut-fil{
+    position: absolute;
+    background: url(../assets/smail-grut-fil.svg) no-repeat;
+    background-size: 45%;
+    top: 121%;
+}
+.cloud {
+    top: 534px;
+    left: 143px;
+}
+.cloud1 {
+    top:  421px;
+    left: 184px;
+}
+.price-footer-header {
+    font-size: 16px;
+    margin: auto;
+}
+.price-footer {
+    height: 96px;
+}
+.footer-back{
+    background: url(/src/assets/price-footer/smail-blue.svg) -5% 69% no-repeat, url(/src/assets/price-footer/smail-j.svg) 98% -6% no-repeat;
+}
+
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+    
+.price-card-aboniment {
+    align-items: flex-start;
+    margin-top: 119%;
+    background: url(../assets/price-footer/yellow-smail-price.svg) 106% 54%/48% no-repeat;
+}
+.price-card-aboniment-quantity span {
+    font-size: 37px;
+}
+.price-card-aboniment-header, .card-aboniment-header {
+    font-family: 'PoetsenOne';
+    color: #676091;
+    font-size: 24px;
+}
+.price-card-aboniment-header {
+    margin-left: 61px;
+}
+.card-aboniment-header-paragraf {
+    font-size: 14px;
+}
+.price-card-list{
+    background-size: 92%;
+}
+.smail-grut-fil{
+    position: absolute;
+    background: url(../assets/smail-grut-fil.svg) no-repeat;
+    background-size: 45%;
+}
+.cloud {
+    top: 482px;
+    left: 143px;
+}
+.cloud1 {
+    top: 379px;
+    left: 184px;
+}
+.price-footer-header {
+    font-size: 16px;
+}
+.price-footer {
+    height: 96px;
+}
+.footer-back{
+    background: url(/src/assets/price-footer/smail-blue.svg) -5% 57% no-repeat, url(/src/assets/price-footer/smail-j.svg) 98% 48% no-repeat;
+}
+
+}
+
 </style>

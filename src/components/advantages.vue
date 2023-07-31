@@ -19,7 +19,7 @@
                 <span>БЕЗОПАСНЫЕ АТТРАКЦИОНЫ ДАЖЕ ДЛЯ САМЫХ МАЛЕНЬКИХ</span>
             </div>
             <div class="advantages-item">
-                <img src="../assets/advantages/Безымянный-4 1.svg" alt="">
+                <img src="../assets/advantages/Безымянный-41.svg" alt="">
                 <span>УДОБНОЕ РАСПОЛОЖЕНИЕ В ЦЕНТРЕ ТЦ</span>
             </div>
             <div class="advantages-item">
@@ -27,8 +27,8 @@
                 <span>ЕЖЕДНЕВНАЯ УБОРКА И КОНТРОЛЬ ЗА ЧИСТОТОЙ</span>
             </div>
             <div class="advantages-item">
-                <img src="../assets/advantages/уборка.svg" alt="">
-                <span>ЕЖЕДНЕВНАЯ УБОРКА И КОНТРОЛЬ ЗА ЧИСТОТОЙ</span>
+                <img src="../assets/advantages/ulubaka.svg" alt="">
+                <span>ОПЫТНЫЕ АНИМАТОРЫ СО СТАЖЕМ РАБОТЫ</span>
             </div>
             <!-- <div class="advantages-item">
                 <img class="smail" src="../assets/advantages/смайл.svg" alt="">
@@ -39,15 +39,15 @@
                 <span>ИГРОВЫЕ МОДУЛИ, АТТРАКЦИОНЫ И ИГРУШКИ</span>
             </div>
             <div class="advantages-item">
-                <img src="../assets/advantages/Безымянный-3 1.svg" alt="">
+                <img src="../assets/advantages/Безымянный-31.svg" alt="">
                 <span>ЕЖЕДНЕВНЫЙ ОСМОТР ВСЕХ ИГРОВЫХ МОДУЛЕЙ</span>
             </div>
             <div class="advantages-item">
-                <img src="../assets/advantages/Безымянный-10 1.svg" alt="">
+                <img src="../assets/advantages/Безымянный-101.svg" alt="">
                 <span>С ЛЮБОВЬЮ И ЗАБОТОЙ К КАЖДОМУ</span>
             </div>
             <div class="advantages-item">
-                <img src="../assets/advantages/Group 44.svg" alt="">
+                <img src="../assets/advantages/Group44.svg" alt="">
                 <span>ОРГАНИЗАЦИЯ ПРАЗДНИКОВ И ДНЕЙ РОЖДЕНИЙ</span>
             </div>
         </div>
@@ -170,4 +170,76 @@
         width: 77.006px;
         height: 79.627px;
     }
+
+
+
+@media (min-width: 1201px) {}
+
+
+@media (min-width: 641px) and (max-width: 1200px) {
+   .advantages-item{
+      width: 55% ;
+      display: flex ;
+      align-items: center ;
+      padding: 20px ;
+      flex-direction: column ;
+      text-align: center;
+   }
+   .advantages-item img{
+    margin-right: 0 ;
+    margin-bottom: 10px;
+   }
+   .advantages-item span{
+      width: 70%;
+   }
+   .advantages-list{
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+   .content-box{
+    margin-top: 20%;
+   }
+}
+@media (max-width: 640px) {
+        .advantages-item{
+        width: 55% ;
+        display: flex ;
+        align-items: center ;
+        padding: 20px ;
+        flex-direction: column ;
+        text-align: center;
+   }
+   .advantages-item img{
+        margin-right: 0 ;
+        margin-bottom: 10px;
+   }
+   .advantages-item span{
+        width: 70%;
+   }
+   .advantages-list{
+        margin-left: 10%;
+        margin-right: 10%;
+   }
+}
+
+@media (min-width: 376px) and (max-width: 425px){
+ .smail-3 {
+    top: 40%;
+    left: 88%;
+    background-image: url(/src/assets/advantages/smail3.svg);
+    width: 44.006px;
+    height: 90.627px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+.smail-3 {
+    top: 40%;
+    left: 88%;
+    background-image: url(/src/assets/advantages/smail3.svg);
+    width: 44.006px;
+    height: 90.627px;
+}
+
+}
 </style>

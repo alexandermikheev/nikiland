@@ -21,9 +21,9 @@
             <a class="mail" href="mailto:info@nikiland.ru">info@nikiland.ru</a>
             <div class="social">
                 <ul class="social-items"> 
-                    <li class="social-item phone-mob"><img src="../assets/header/phone 1.svg" alt="phone"></li>
-                    <li class="social-item wa"><img src="../assets/header/whatsapp-logo 1.svg" alt="wa"></li>
-                    <li class="social-item telegram"><img src="../assets/header/telegram-logo 1.svg" alt="telegram"></li>
+                    <li class="social-item phone-mob"><img src="../assets/header/phone1.svg" alt="phone"></li>
+                    <li class="social-item wa"><img src="../assets/header/whatsapp-logo1.svg" alt="wa"></li>
+                    <li class="social-item telegram"><img src="../assets/header/telegram-logo1.svg" alt="telegram"></li>
                     <li class="social-item instagram"><img src="../assets/header/Vector.svg" alt="instagram"></li>
                 </ul>
             </div>
@@ -204,10 +204,122 @@ body {
     box-sizing: border-box;
     padding-left: 29px;
 }
-@media (max-width: 992px) {
+@media (min-width: 1201px) {}
+
+@media (min-width: 641px) and (max-width: 1200px) {
     .header{
         box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
-    background: url(../assets/header/shar.svg) top left no-repeat;
+        background: url(../assets/header/shar.svg) top left no-repeat;
+        background-color: white;
+    }
+    .header .menu {
+        transform: translateX(100%);
+    }
+    .header__burger-btn {
+        display: block;
+    }
+    .logo{
+        margin-right: 35%;
+    }
+    .menu {
+        position: fixed;
+        left: -2px;
+        top: 0;
+        width: 101%;
+        padding: 75px 20px 20px 20px;
+        transition: transform .5s;
+        height: 100%;
+        background: url(../assets/header/menu-smail.svg) 80% 80%/35% no-repeat;
+        background-color: #9D9D9D;
+        display: block;
+    }
+    .menu__list {
+        display: block;
+    }
+    .menu__item{
+        height: 13vw;
+    }
+    .menu__item a:hover{
+        color: #695C91;
+    }
+    .menu__link {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .header.opened .menu {
+        transform: translateX(0%);
+    }
+    .phone{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        color: white;
+        font-size: 4.4vw;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 20px;
+        }
+    .phone-tel{
+        color: #FFF;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration: none;
+        }
+  
+        .mail{
+        display: block;
+        color: #FFF;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration: none;
+        }    
+    .social-items{
+        display: flex;
+        list-style-type: none;
+        color: #9D9D9D;
+        font-size: 24px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        padding: 0;
+        }
+    .social-items li:nth-child(n+2):nth-last-child(n+1){
+        box-sizing: border-box;
+        padding-left: 29px;
+    }
+    .phone-mob{
+            display: none;
+    }
+    .wa{
+            padding-left: 0px;
+    }
+    .header__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 640px) {
+    .header{
+        box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
+        background: url(../assets/header/shar.svg) top left no-repeat;
+        background-color: white;
     }
     .header .menu {
     transform: translateX(100%);
@@ -312,6 +424,21 @@ body {
         padding-bottom: 10px;
     }
 }
+
+@media (min-width: 376px) and (max-width: 425px){
+.logo {
+    margin-right: 12%;
+}
+
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+.logo {
+    margin-right: 12%;
+}
+}
+
+
 </style>
 
 <script>

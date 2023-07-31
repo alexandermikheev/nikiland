@@ -6,31 +6,17 @@
             <a href="mailto:info@nikiland.ru">info@nikiland.ru</a>
             <div class="footer-social">
                 <ul class="footer-social-items"> 
-                    <li class="footer-social-item"><img src="../assets/header/phone 1.svg" alt="phone"></li>
-                    <li class="footer-social-item"><img src="../assets/header/whatsapp-logo 1.svg" alt="wa"></li>
-                    <li class="footer-social-item"><img src="../assets/header/telegram-logo 1.svg" alt="telegram"></li>
+                    <li class="footer-social-item"><img src="../assets/header/phone1.svg" alt="phone"></li>
+                    <li class="footer-social-item"><img src="../assets/header/whatsapp-logo1.svg" alt="wa"></li>
+                    <li class="footer-social-item"><img src="../assets/header/telegram-logo1.svg" alt="telegram"></li>
                     <li class="footer-social-item"><img src="../assets/header/Vector.svg" alt="instagram"></li>
                 </ul>
             </div>
+            <div class="lic">© 2023 "НИКИ ЛЭНД". Все права защищены.</div>
         </div>
-            <!-- <nav class="footer-navbar-list">
-            <ul class="footer-navbar-items">
-                <a href="#slogan"><li  class="footer-navbar-item">ГЛАВНАЯ</li></a>
-                
-                <a href="#services-box"><li class="footer-navbar-item">УСЛУГИ</li></a>
-                <a href="#price"><li class="footer-navbar-item">ПРАЙС</li></a>
-                <a href="#rules"><li class="footer-navbar-item">ПРАВИЛА ПОСЕЩЕНИЯ</li></a>
-                <a href="#promotions"><li class="footer-navbar-item">АКЦИИ</li></a>
-
-                <a href="#about"><li class="footer-navbar-item">ПАРТНЁРАМ</li></a>
-
-                <a href="#map-ya"><li class="footer-navbar-item">КАРТА</li></a>
-                <a href="#reviews"><li class="footer-navbar-item">ОТЗЫВЫ</li></a>
-
-            </ul>      
-        </nav> -->
+       
     </div>
-    <div class="lic">© 2023 "НИКИ ЛЭНД". Все права защищены.</div>
+
 </template>
 <style>
 .footer ul {
@@ -40,6 +26,8 @@
     display: flex;
     padding-top: 40px;
     justify-content: space-around;
+    box-shadow: 0px 0px 34px 2px rgba(34, 60, 80, 0.13);
+    margin-top: 40px;
 }
 .footer-phone a{
     display: flex;
@@ -91,4 +79,31 @@
     width: 20%;
 }
 
+@media (min-width: 376px) and (max-width: 425px){
+    .footer-phone {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 8px;
+    margin-right: 0; 
+}
+.footer {
+    margin: 0 5px;
+ }
+
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+    .footer-phone {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 8px;
+    margin-right: 0; 
+}
+.footer {
+    margin: 0 5px;
+ }
+
+}
 </style>
