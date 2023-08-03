@@ -1,252 +1,142 @@
+<script>
+  // import Swiper core and required modules
+  import { Navigation, Pagination, Scrollbar, A11y, Virtual } from 'swiper/modules';
+
+  // Import Swiper Vue.js components
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+  import 'swiper/css/scrollbar';
+  import 'swiper/css/virtual';
+
+  // Import Swiper styles
+  export default {
+    data: () => ({
+      width: 0,
+      small: false,
+    }),
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      const onSwiper = (swiper) => {
+        console.log(swiper);
+      };
+      const onSlideChange = () => {
+        console.log('slide change');
+      };
+      return {
+        onSwiper,
+        onSlideChange,
+        modules: [Navigation, Pagination, Scrollbar, A11y, Virtual],
+      };
+    },
+
+  destroyed() {
+  window.removeEventListener("resize", this.updateWidth);
+  },
+  created() {
+  window.addEventListener('resize', this.updateWidth);
+  },  beforeMount() {
+    this.loadwidth()
+},
+  methods : {
+  updateWidth() {
+    this.width = window.innerWidth;
+    if(this.width < 1078){
+      this.small = false
+    }
+    else{
+      this.small = true;
+     }
+     
+  },
+  loadwidth(){
+      if(window.innerWidth < 1078){
+        this.small = false
+      }
+      else{
+      this.small = true;
+     }
+     }
+  },
+  };
+</script>
+
+
+
 <template>
-        <div class="slide-container swiper">
-            <div class="slide-content">
-                <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
+      <div id="gallery">
+        <h2 class="gallery-header">Галерея</h2>
+  <swiper
+    v-if="small"
+    :modules="modules"
+    :slides-per-view="4"
+    :space-between="50"
+    navigation
+    :rewind="true"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
+  >
+    <swiper-slide class="swiper-gallery-slide"><img src="../assets/gallery/1.png" alt=""></swiper-slide>
+    <swiper-slide class="swiper-gallery-slide"><img src="../assets/gallery/2.png" alt=""></swiper-slide>
+    <swiper-slide :v-slot="{ isActive }" class="swiper-gallery-slide"><img src="../assets/gallery/3.png" alt=""></swiper-slide>
+    <swiper-slide class="swiper-gallery-slide"><img src="../assets/gallery/4.png" alt=""></swiper-slide>
+    <swiper-slide class="swiper-gallery-slide"><img src="../assets/gallery/5.png" alt=""></swiper-slide>
+    <swiper-slide class="swiper-gallery-slide"><img src="../assets/gallery/6.png" alt=""></swiper-slide>
+  </swiper>
 
-                            <div class="card-image">
-                                <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                            </div>
-                        </div>
 
-                        <div class="card-content">
-                            <h2 class="name">David Dell</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                            <button class="button">View More</button>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <!--<img src="images/profile4.jpg" alt="" class="card-img">-->
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">David Dell</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                            <button class="button">View More</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <!--<img src="images/profile5.jpg" alt="" class="card-img">-->
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">David Dell</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                            <button class="button">View More</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <!--<img src="images/profile6.jpg" alt="" class="card-img">-->
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">David Dell</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                            <button class="button">View More</button>
-                        </div>
-                    </div>
-
-                        
-                </div>
-            </div>
-
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
-        </div>
+  <swiper
+    v-else
+    :modules="modules"
+    :slides-per-view="1"
+    :space-between="50"
+    navigation
+    :rewind="true"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
+  >
+    <swiper-slide class="swiper-gallery-slide"><img src="../assets/gallery/1.png" alt=""></swiper-slide>
+    <swiper-slide class="swiper-gallery-slide"><img src="../assets/gallery/2.png" alt=""></swiper-slide>
+    <swiper-slide :v-slot="{ isActive }" class="swiper-gallery-slide"><img src="../assets/gallery/3.png" alt=""></swiper-slide>
+    <swiper-slide class="swiper-gallery-slide"><img src="../assets/gallery/4.png" alt=""></swiper-slide>
+    <swiper-slide class="swiper-gallery-slide"><img src="../assets/gallery/5.png" alt=""></swiper-slide>
+    <swiper-slide class="swiper-gallery-slide"><img src="../assets/gallery/6.png" alt=""></swiper-slide>
+  </swiper>
+</div>
 </template>
 
-<script>
-// var swiper = new Swiper(".slide-content", {
-//     slidesPerView: 3,
-//     spaceBetween: 25,
-//     loop: true,
-//     centerSlide: 'true',
-//     fade: 'true',
-//     grabCursor: 'true',
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//       dynamicBullets: true,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
 
-//     breakpoints:{
-//         0: {
-//             slidesPerView: 1,
-//         },
-//         520: {
-//             slidesPerView: 2,
-//         },
-//         950: {
-//             slidesPerView: 3,
-//         },
-//     },
-//   });
-// </script>
-<style>
-/* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+<style >
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-body{
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #EFEFEF;
-} */
-.slide-container{
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px 0;
-}
-.slide-content{
-  margin: 0 40px;
-  overflow: hidden;
-  border-radius: 25px;
-}
-.card{
-  border-radius: 25px;
-  background-color: #FFF;
-}
-.image-content,
-.card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
-}
-.image-content{
-  position: relative;
-  row-gap: 5px;
-  padding: 25px 0;
-}
-.overlay{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #4070F4;
-  border-radius: 25px 25px 0 25px;
-}
-.overlay::before,
-.overlay::after{
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #4070F4;
-}
-.overlay::after{
-  border-radius: 0 25px 0 0;
-  background-color: #FFF;
-}
-.card-image{
-  position: relative;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background: #FFF;
-  padding: 3px;
-}
-.card-image .card-img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #4070F4;
-}
-.name{
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-}
-.description{
-  font-size: 14px;
-  color: #707070;
+.swiper-gallery-slide{
   text-align: center;
-}
-.button{
-  border: none;
-  font-size: 16px;
-  color: #FFF;
-  padding: 8px 16px;
-  background-color: #4070F4;
-  border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.button:hover{
-  background: #265DF2;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: auto;
+  border-radius: 40px;
+  overflow: hidden;
 }
 
-.swiper-navBtn{
-  color: #6E93f7;
-  transition: color 0.3s ease;
-}
-.swiper-navBtn:hover{
-  color: #4070F4;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after{
-  font-size: 35px;
-}
-.swiper-button-next{
-  right: 0;
-}
-.swiper-button-prev{
-  left: 0;
-}
-.swiper-pagination-bullet{
-  background-color: #6E93f7;
-  opacity: 1;
-}
-.swiper-pagination-bullet-active{
-  background-color: #4070F4;
-}
-
-@media screen and (max-width: 768px) {
-  .slide-content{
-    margin: 0 10px;
-  }
-  .swiper-navBtn{
-    display: none;
-  }
+.swiper-gallery-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

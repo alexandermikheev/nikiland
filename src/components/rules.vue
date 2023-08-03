@@ -9,7 +9,7 @@
 <div class="rules-card">
     <div class="rusles-card-box">
         <div class="rusles-card-logo"><img src="../assets/Rules-logo.svg" alt="" srcset=""></div>
-        <a href="НИКИ_ЛЭНД_правила_посещения.pdf"><div class="rusles-card-button">информация по ссылке</div></a>
+        <div class="rusles-card-button">информация по <a href="НИКИ_ЛЭНД_правила_посещения.pdf">ссылке</a></div>
     </div>
 </div>
 </template>
@@ -43,6 +43,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+}
+.rusles-card-button a{
+    color: #F7C400;
+
 }
 .rusles-card-item{
     color: #676190;

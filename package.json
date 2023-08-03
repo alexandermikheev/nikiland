@@ -9,12 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "swiper": "^10.1.0",
     "vue": "^3.2.47",
+    "vue-awesome-swiper": "^5.0.1",
     "vue-yandex-maps": "^0.11.15",
     "vue3-carousel": "^0.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
+    "sass": "^1.64.2",
     "vite": "^4.3.9"
   }
 }

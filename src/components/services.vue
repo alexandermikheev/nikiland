@@ -5,7 +5,7 @@
             <div v-for="(item, index) in serviceitem" :key="index" class="services-card">
                 <div class="services-card-item">
                     <div class="services-card-container">
-                    <div class="services-img"><img :src="item.img" alt=""></div>
+                    <div class="services-img"><img :src="item.src" alt=""></div>
                     <h2 class="services-card-header">{{ item.title }}</h2>
                     <p class="services-card-paragraf">{{ item.deskription }}</p>
                 </div>
@@ -20,10 +20,10 @@ export default{
         return {
             serviceitem:
             [
-                {title: 'ДЕТСКИЙ ЦЕНТР ДЛЯ ДЕТЕЙ ОТ 0 ДО 7 ЛЕТ (ВКЛЮЧИТЕЛЬНО) ИЛИ РОСТОМ ДО 130 СМ', deskription: 'Вы можете вашего ребенка оставить с нашими веселыми и ответственными сотрудниками, если его возраст не менее четырех лет.',img:'/src/assets/service/1.png'},
-                {title: 'Красивые фотографии', deskription: 'Профессиональные фотографы детского центра запечатлят самые яркие моменты, а вы сможете приобрести фотографии на память',img:'/src/assets/service/2.png'},
-                {title: 'Организация праздников', deskription: 'Наша команда профессионалов поможет организовать яркий, веселый и запоминающийся праздник для Ваших детей.',img:'/src/assets/service/3.png'},
-                {title: 'Опытные аниматоры', deskription: 'Профессиональные аниматоры всегда готовы радовать наших гостей увлекательными играми и интересными конкурсами. Большой выбор любимых героев!',img:'/src/assets/service/4.png'},
+                {title: 'ДЕТСКИЙ ЦЕНТР ДЛЯ ДЕТЕЙ ОТ 0 ДО 7 ЛЕТ (ВКЛЮЧИТЕЛЬНО) ИЛИ РОСТОМ ДО 130 СМ', deskription: 'Вы можете вашего ребенка оставить с нашими веселыми и ответственными сотрудниками, если его возраст не менее четырех лет.',src:'service/1.png'},
+                {title: 'Красивые фотографии', deskription: 'Профессиональные фотографы детского центра запечатлят самые яркие моменты, а вы сможете приобрести фотографии на память',src:'service/2.png'},
+                {title: 'Организация праздников', deskription: 'Наша команда профессионалов поможет организовать яркий, веселый и запоминающийся праздник для Ваших детей.',src:'service/3.png'},
+                {title: 'Опытные аниматоры', deskription: 'Профессиональные аниматоры всегда готовы радовать наших гостей увлекательными играми и интересными конкурсами. Большой выбор любимых героев!',src:'service/4.png '},
             ]
         }
     }}
@@ -32,7 +32,7 @@ export default{
 #services-box{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 .services-header{
@@ -73,7 +73,7 @@ export default{
     font-weight: 600;
     line-height: 139.5%;
 }
-@media (min-width: 641px) and (max-width: 1200px) {
+/* @media (min-width: 641px) and (max-width: 1200px) {
 
    .services-card{
 
@@ -82,5 +82,5 @@ export default{
    .services-card-item{
 
    }
-   }
+   } */
 </style>

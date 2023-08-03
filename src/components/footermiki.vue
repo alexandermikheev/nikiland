@@ -1,10 +1,11 @@
 <template>
     <div class="footer">
-        <div class="footer-logo"><img src="../assets/Rules-logo.svg" alt="logo"></div>
+        <div class="footer-box">
+        <div class="footer-logo"><img src="../assets/footer-logo.svg" alt="logo"></div>
         <div class="footer-phone">
-            <a class="footer-phone-tel" href="tel:+78008008080">8-800-800-80-80</a>
-            <a href="mailto:info@nikiland.ru">info@nikiland.ru</a>
-            <div class="footer-social">
+            <a class="footer-phone-tel footer-elem" href="tel:+78008008080">8-800-800-80-80</a>
+            <a class="footer-elem" href="mailto:info@nikiland.club">info@nikiland.club</a>
+            <div class="footer-social footer-elem">
                 <ul class="footer-social-items"> 
                     <li class="footer-social-item"><img src="../assets/header/phone1.svg" alt="phone"></li>
                     <li class="footer-social-item"><img src="../assets/header/whatsapp-logo1.svg" alt="wa"></li>
@@ -12,9 +13,10 @@
                     <li class="footer-social-item"><img src="../assets/header/Vector.svg" alt="instagram"></li>
                 </ul>
             </div>
-            <div class="lic">© 2023 "НИКИ ЛЭНД". Все права защищены.</div>
+
         </div>
-       
+    </div>
+    <div class="lic"><span>© 2023 "НИКИ ЛЭНД". Все права защищены.</span></div>
     </div>
 
 </template>
@@ -25,9 +27,15 @@
 .footer{
     display: flex;
     padding-top: 40px;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     box-shadow: 0px 0px 34px 2px rgba(34, 60, 80, 0.13);
     margin-top: 40px;
+    box-sizing: border-box;
+}
+.footer-box{
+    display: flex;
+    align-items: center;
 }
 .footer-phone a{
     display: flex;
@@ -39,13 +47,16 @@
     line-height: normal;
     text-decoration: none;
 }
+.footer-phone a:hover{
+    color: #695C91;
+}
 .footer-phone{
     display: flex;
-    flex-direction: column;
     align-content: center;
+    align-items: center;
+}
+.footer-elem:nth-child(n+1){
     margin-left: 52px;
-    margin-right: 92px;
-    
 }
 .footer-navbar-list{
     display: flex;
@@ -78,6 +89,20 @@
 .footer-navbar-item{
     width: 20%;
 }
+.lic{
+    display: flex;
+    width: 100%;
+    max-width: 1160px;
+    justify-content: end;
+    color: #C4C4C4;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131%; /* 20.96px */
+    text-decoration-line: underline;
+}
+
 
 @media (min-width: 376px) and (max-width: 425px){
     .footer-phone {

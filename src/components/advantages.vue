@@ -173,7 +173,6 @@
 
 
 
-@media (min-width: 1201px) {}
 
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -196,9 +195,19 @@
     margin-left: 10%;
     margin-right: 10%;
    }
-   .content-box{
-    margin-top: 20%;
-   }
+   .smail{
+        display: none;
+    }
+    .smail-1{
+        display: none;
+    }
+    .smail-2{
+        display: none;
+    }
+    .smail-3{
+        display: none;
+    }
+
 }
 @media (max-width: 640px) {
         .advantages-item{
@@ -220,6 +229,18 @@
         margin-left: 10%;
         margin-right: 10%;
    }
+   .smail{
+        display: none;
+    }
+    .smail-1{
+        display: none;
+    }
+    .smail-2{
+        display: none;
+    }
+    .smail-3{
+        display: none;
+    }
 }
 
 @media (min-width: 376px) and (max-width: 425px){
@@ -240,6 +261,18 @@
     width: 44.006px;
     height: 90.627px;
 }
+.smail{
+        display: none;
+    }
+    .smail-1{
+        display: none;
+    }
+    .smail-2{
+        display: none;
+    }
+    .smail-3{
+        display: none;
+    }
 
 }
 </style>

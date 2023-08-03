@@ -25,6 +25,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  box-sizing: content-box;
 }
 .map-ya-item-header{
   color: #9D9D9D;
@@ -47,6 +48,6 @@
   color: #DF5F26;
 }
 .map{
-  padding-right: 40px;
+  padding-right: 7%;
 }
 </style>

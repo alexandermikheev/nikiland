@@ -1,13 +1,69 @@
-<script >
+<script>
+  import { Navigation, Pagination, Scrollbar, A11y, Virtual } from 'swiper/modules';
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+  import 'swiper/css/scrollbar';
+  import 'swiper/css/virtual';
 
+  export default {
+    data: () => ({
+      width: 0,
+      small: true,
+    }),
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      const onSwiper = (swiper) => {
+        console.log(swiper);
+      };
+      const onSlideChange = () => {
+        console.log('slide change');
+      };
+      return {
+        onSwiper,
+        onSlideChange,
+        modules: [Navigation, Pagination, Scrollbar, A11y, Virtual],
+      };
+    },
+    methods : {
+    updateWidth() {
+    this.width = window.innerWidth;
+    if(this.width < 1078){
+      this.small = false
+    }
+    else{
+      this.small = true;
+     }
+  },
+  loadwidth(){
+      if(window.innerWidth < 1078){
+        this.small = false
+      }
+      else{
+      this.small = true;
+     }
+     }
+  },
+  
+  created() {
+  window.addEventListener('resize', this.updateWidth);
+  },
+  beforeMount() {
+    this.loadwidth()
+},
+  };
 </script>
 
 <template>
-<div id="reviews">
+<div id="reviews" >
     <div class="reviews-header">Что говорят о нас</div>
     <div class="reviews-paragraf">Из наших книг отзывов и предложений</div>
     
-    <div class="reviews-card">
+    <div class="reviews-card" v-if="small">
         <div class="reviews-card-item feedback-1">
             <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
             <div class="reviews-card-place">ТЦ "Авиапарк"</div>
@@ -33,8 +89,62 @@
             <div class="reviews-card-place">ТЦ "Авиапарк"</div>
         </div>
     </div>
+
+    <swiper
+    v-else
+    :modules="modules"
+    :slides-per-view="1"
+    :space-between="50"
+    navigation
+    :rewind="true"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
+  >
+    <swiper-slide class="swiper-reviews-slide">
+        <div class="reviews-card-item feedback-6">
+            <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
+            <div class="reviews-card-place">ТЦ "Авиапарк"</div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="swiper-reviews-slide">
+        <div class="reviews-card-item feedback-2">
+            <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
+            <div class="reviews-card-place">ТЦ "Авиапарк"</div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="swiper-reviews-slide">
+        <div class="reviews-card-item feedback-3">
+            <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
+            <div class="reviews-card-place">ТЦ "Авиапарк"</div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="swiper-reviews-slide">
+        <div class="reviews-card-item feedback-4">
+            <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
+            <div class="reviews-card-place">ТЦ "Авиапарк"</div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="swiper-reviews-slide">
+        <div class="reviews-card-item feedback-5">
+            <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
+            <div class="reviews-card-place">ТЦ "Авиапарк"</div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="swiper-reviews-slide">
+        <div class="reviews-card-item feedback-6">
+            <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
+            <div class="reviews-card-place">ТЦ "Авиапарк"</div>
+        </div>
+    </swiper-slide>
+
+  </swiper>
+    
 </div>
-<div id="about">
+
+
+
+
+ <div id="about">
     <div class="about-header">
         ЕСЛИ ВЫ ХОТИТЕ ОТКРЫТЬ НАШ ЦЕНТР В СВОЁМ ТЦ ОБРАТИТЕСЬ ПО EMAIL:
     </div>
@@ -44,7 +154,7 @@
         </div>
     </div>
 
-</div>
+</div> 
 </template>
 
 <style >
@@ -82,6 +192,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .phone-about a{
     color: #FFF;
@@ -92,7 +203,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-transform: capitalize;
+    text-transform: lowercase;
     text-decoration: none;
 }
 .phone-info{

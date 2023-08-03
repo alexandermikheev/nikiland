@@ -18,7 +18,7 @@
                 </ul>
             <div class="phone">
             <a class="phone-tel" href="tel:+78008008080">8-800-800-80-80</a>
-            <a class="mail" href="mailto:info@nikiland.ru">info@nikiland.ru</a>
+            <a class="mail" href="mailto:info@nikiland.club">info@nikiland.club</a>
             <div class="social">
                 <ul class="social-items"> 
                     <li class="social-item phone-mob"><img src="../assets/header/phone1.svg" alt="phone"></li>

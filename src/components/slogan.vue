@@ -152,20 +152,28 @@
 
 @media (min-width: 641px) and (max-width: 1200px) {
    .content-box{
-    margin-top: 20%;
+    margin-top: 30%;
+    height: 411px;
    }
+   .castle {
+    position: absolute;
+    width: 375px;
+    height: 151px;
+    top: 0;
+    right: 0;
+}
 
 }
 
 @media (max-width: 640px) {
 
 .content-box{
-    margin-top: 30%;
+    margin-top: 35%;
    }
 .castle {
     position: absolute;
-    width: 600px;
-    height: 400px;
+    width: 375px;
+    height: 151px;
     top: 0;
     right: 0;
 }
@@ -173,7 +181,7 @@
 @media (min-width: 376px) and (max-width: 425px){
 
   #slogan {
-    margin-top: 164px;
+    margin-top: 45%;
 }
 .castle {
     position: absolute;
@@ -189,7 +197,7 @@
 }
 @media (min-width: 320px) and (max-width: 375px){
   #slogan {
-    margin-top: 164px;
+    margin-top: 30%;
 }
 .castle {
     position: absolute;
@@ -199,7 +207,7 @@
     right: 0;
 }
 .content-box {
-    height: 415px;
+    height: 35%;
 }
 }
 </style>

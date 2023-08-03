@@ -3,7 +3,7 @@ import nikiheader from './components/nikiheader.vue'
 import slogan from './components/slogan.vue'
 import advantages from './components/advantages.vue'
 import services from './components/services.vue'
-import gallery from './components/gallery.vue'
+import gallery1 from './components/gallery1.vue'
 import price from './components/price.vue'
 import promotions from './components/promotions.vue'
 import rules from './components/rules.vue'
@@ -17,7 +17,7 @@ import footermiki from './components/footermiki.vue'
 <slogan />
 <advantages />
 <services />
-<gallery />
+<gallery1 />
 <price />
 <promotions />
 <rules />
