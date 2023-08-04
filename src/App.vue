@@ -23,7 +23,7 @@ import footermiki from './components/footermiki.vue'
 <rules />
 <reviews />
 <mapya />
-<footermiki />
+<!-- <footermiki /> -->
 </template>
 
 <style scoped>

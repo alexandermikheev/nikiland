@@ -1,9 +1,61 @@
-<script >
+<script>
+  // import Swiper core and required modules
+  import { Navigation, Pagination, Scrollbar, A11y, Virtual } from 'swiper/modules';
 
+  // Import Swiper Vue.js components
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+  import 'swiper/css/scrollbar';
+  import 'swiper/css/virtual';
+
+  // Import Swiper styles
+  export default {
+    data: () => ({
+      width: 0,
+      small: false,
+    }),
+    
+    setup() {
+    },
+
+    destroyed() {
+        window.removeEventListener("resize", this.updateWidth);
+    },
+    created() {
+        window.addEventListener('resize', this.updateWidth);
+    },
+    beforeMount() {
+        this.loadwidth()
+    },
+  methods : {
+  updateWidth() {
+    this.width = window.innerWidth;
+    if(this.width < 1078){
+      this.small = false
+    }
+    else{
+      this.small = true;
+     }
+     
+  },
+  loadwidth(){
+      if(window.innerWidth < 1078){
+        this.small = false
+      }
+      else{
+      this.small = true;
+     }
+     }
+  },
+  };
 </script>
 
 <template>
-<div id="price">
+<div id="price" v-if="small">
     <h2 class="price-header">
         ПРАЙС
     </h2>
@@ -43,6 +95,54 @@
         <div class="footer-back"></div>
     </div>
 </div>
+
+
+
+<!-- mobile -->
+<div id="price" v-else>
+    <h2 class="price-header">
+        ПРАЙС
+    </h2>
+<div class="price-card">
+    <div class="price-card-aboniment">
+            <h3 class="price-card-aboniment-header">Абонемент</h3>
+            <div class="price-card-aboniment-quantity">
+                <span>10</span>
+                <h3 class="card-aboniment-header">Сеансов</h3>
+                <p class="card-aboniment-header-paragraf">10 посещений по (1часу)-4500₽</p>
+            </div>
+            <div class="smail-grut-blue"></div>
+        </div>
+        <div class="price-card-list">
+            <div class="weekdays">
+                <h3 class="price-card-list-header">Прайс лист</h3>
+                <h3 class="weekdays-header">в будние дни</h3>
+                <div class="cost">30 мин - 300₽</div>
+                <div class="cost">1 час - 450₽ </div>
+            </div>
+            <div class="weekends">
+                <h3 class="weekends-header">в выходные дни</h3>
+                <div class="cost">30 мин - 400₽</div>
+                <div class="cost">1 час - 550₽</div>
+            </div>
+            <div class="smail-grut-fil"></div>
+            <div class="cloud"></div>
+            <div class="cloud1"></div>
+            
+        </div>
+    </div>
+    <div class="price-footer">
+        <div class="price-footer-header">
+            <h2>территория радости и веселья</h2>
+        </div>
+        <div class="footer-back"></div>
+    </div>
+</div>
+
+
+
+
+
 </template>
 
 <style>
@@ -463,6 +563,14 @@
 .footer-back{
     background: url(/src/assets/price-footer/smail-blue.svg) -5% 69% no-repeat, url(/src/assets/price-footer/smail-j.svg) 98% -6% no-repeat;
 }
+
+}
+@media (min-width: 426px) and (max-width: 640px){
+
+    .price-card-aboniment {
+        background: url(../assets/price-footer/yellow-smail-price.svg) 116% 54%/63% no-repeat;
+    }
+
 
 }
 
