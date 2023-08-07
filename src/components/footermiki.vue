@@ -7,10 +7,10 @@
             <a class="footer-elem" href="mailto:info@nikiland.club">info@nikiland.club</a>
             <div class="footer-social footer-elem">
                 <ul class="footer-social-items"> 
-                    <li class="footer-social-item"><img src="../assets/header/phone1.svg" alt="phone"></li>
-                    <li class="footer-social-item"><img src="../assets/header/whatsapp-logo1.svg" alt="wa"></li>
-                    <li class="footer-social-item"><img src="../assets/header/telegram-logo1.svg" alt="telegram"></li>
-                    <li class="footer-social-item"><img src="../assets/header/Vector.svg" alt="instagram"></li>
+                    <a href="tel:+78008008080"><li class="footer-social-item"><img src="../assets/header/phone1.svg" alt="phone"></li></a>
+                    <a href="wtsp.cc/78008008080"><li class="footer-social-item"><img src="../assets/header/whatsapp-logo1.svg" alt="wa"></li></a>
+                    <a href="https://t.me/88008008080"><li class="footer-social-item"><img src="../assets/header/telegram-logo1.svg" alt="telegram"></li></a>
+                    <a href="https://instagram.com/nikiland.club?igshid=MzRlODBiNWFlZA=="><li class="footer-social-item"><img src="../assets/header/Vector.svg" alt="instagram"></li></a>
                 </ul>
             </div>
 
