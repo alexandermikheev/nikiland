@@ -66,6 +66,9 @@
     }
 }
 @media (max-width: 640px) {
+    .rusles-card-button{
+        text-align: center;
+    }
 
 }
 @media (min-width: 376px) and (max-width: 425px){

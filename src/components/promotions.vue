@@ -124,4 +124,73 @@
   display: block;
   object-fit: cover;
 }
+@media (min-width: 1201px) {}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  .swiper-slide-promotions{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  width: 360px;
+  height: auto;
+}
+}
+
+@media (max-width: 640px) {
+  .swiper-slide-promotions{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  width: 360px;
+  height: auto;
+}
+
+}
+
+
+@media (min-width: 376px) and (max-width: 425px){
+  .swiper-slide-promotions{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  width: 360px;
+  height: auto;
+}
+
+}
+@media (min-width: 320px) and (max-width: 375px){
+  .swiper-slide-promotions{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  width: 360px;
+  height: auto;
+}
+}
+
+
 </style>

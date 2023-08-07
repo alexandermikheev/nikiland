@@ -11,7 +11,7 @@
         <div class="map-ya-item">
           <div class="map-ya-item-header">Адрес:</div>
           <div class="metro-mall">ТРЦ Саларис м. Саларьево</div>
-          <div class="address">23-й километр Киевского шоссе, 1</div>
+          <span class="address">23-й километр Киевского шоссе, 1</span>
           <div class="working-hours-header">время работы:</div>
           <div class="working-hours">10:00 - 22:00</div>
         </div>
@@ -50,4 +50,65 @@
 .map{
   padding-right: 7%;
 }
+
+@media (min-width: 1201px) {}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+
+
+}
+@media (min-width: 641px) and (max-width: 1068px) {
+.map{
+  padding-right: 0%;
+  padding-bottom: 7%;
+}
+
+}
+
+@media (max-width: 640px) {
+  .map{
+    padding-right: 0%;
+  padding-bottom: 7%;
+}
+.map-ya-item{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.address{
+  text-align: center;
+}
+}
+@media (min-width: 376px) and (max-width: 425px){
+  .map{
+  padding-right: 0%;
+  padding-bottom: 7%;
+}
+.map-ya-item{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.address{
+  text-align: center;
+}
+}
+@media (min-width: 320px) and (max-width: 375px){
+  .map{
+  padding-right: 0%;
+  padding-bottom: 7%;
+}
+.map-ya-item{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.address{
+  text-align: center;
+}
+}
+
 </style>

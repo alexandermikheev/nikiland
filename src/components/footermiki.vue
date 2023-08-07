@@ -103,14 +103,36 @@
     text-decoration-line: underline;
 }
 
+@media (min-width: 641px) and (max-width: 1200px) {
+    .footer-phone {
+    display: flex;
+    align-content: center;
+    margin-left: 8px;
+    margin-right: 0; 
+    flex-direction: column;
+}
+}
+
+@media (max-width: 640px) {
+    .footer-phone {
+    display: flex;
+    align-content: center;
+    margin-left: 8px;
+    margin-right: 0; 
+    flex-direction: column;
+}
+}
+
+
+
 
 @media (min-width: 376px) and (max-width: 425px){
     .footer-phone {
     display: flex;
-    flex-direction: column;
     align-content: center;
     margin-left: 8px;
     margin-right: 0; 
+    flex-direction: column;
 }
 .footer {
     margin: 0 5px;

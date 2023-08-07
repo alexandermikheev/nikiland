@@ -55,7 +55,7 @@
 </script>
 
 <template>
-<div id="price" v-if="small">
+<div id="price">
     <h2 class="price-header">
         ПРАЙС
     </h2>
@@ -95,53 +95,6 @@
         <div class="footer-back"></div>
     </div>
 </div>
-
-
-
-<!-- mobile -->
-<div id="price" v-else>
-    <h2 class="price-header">
-        ПРАЙС
-    </h2>
-<div class="price-card">
-    <div class="price-card-aboniment">
-            <h3 class="price-card-aboniment-header">Абонемент</h3>
-            <div class="price-card-aboniment-quantity">
-                <span>10</span>
-                <h3 class="card-aboniment-header">Сеансов</h3>
-                <p class="card-aboniment-header-paragraf">10 посещений по (1часу)-4500₽</p>
-            </div>
-            <div class="smail-grut-blue"></div>
-        </div>
-        <div class="price-card-list">
-            <div class="weekdays">
-                <h3 class="price-card-list-header">Прайс лист</h3>
-                <h3 class="weekdays-header">в будние дни</h3>
-                <div class="cost">30 мин - 300₽</div>
-                <div class="cost">1 час - 450₽ </div>
-            </div>
-            <div class="weekends">
-                <h3 class="weekends-header">в выходные дни</h3>
-                <div class="cost">30 мин - 400₽</div>
-                <div class="cost">1 час - 550₽</div>
-            </div>
-            <div class="smail-grut-fil"></div>
-            <div class="cloud"></div>
-            <div class="cloud1"></div>
-            
-        </div>
-    </div>
-    <div class="price-footer">
-        <div class="price-footer-header">
-            <h2>территория радости и веселья</h2>
-        </div>
-        <div class="footer-back"></div>
-    </div>
-</div>
-
-
-
-
 
 </template>
 
@@ -565,6 +518,35 @@
 }
 
 }
+
+
+@media (min-width: 482px) and (max-width: 605px){
+
+    .smail-grut-fil {
+    position: absolute;
+    background: url(/src/assets/smail-grut-fil.svg) no-repeat;
+    background-size: 68%;
+    width: 299px;
+    height: 342px;
+    top: 113%;
+    left: 39px;
+}
+
+}
+
+@media (min-width: 426px) and (max-width: 482px){
+
+.smail-grut-fil {
+    position: absolute;
+    background: url(/src/assets/smail-grut-fil.svg) no-repeat;
+    background-size: 40%;
+    width: 299px;
+    height: 342px;
+    top: 113%;
+    left: 39px;
+}
+
+}
 @media (min-width: 426px) and (max-width: 640px){
 
     .price-card-aboniment {
@@ -573,6 +555,7 @@
 
 
 }
+
 
 @media (min-width: 376px) and (max-width: 425px){
     .price-card-aboniment {
