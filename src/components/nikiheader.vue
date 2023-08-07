@@ -21,10 +21,10 @@
             <a class="mail" href="mailto:info@nikiland.club">info@nikiland.club</a>
             <div class="social">
                 <ul class="social-items"> 
-                    <li class="social-item phone-mob"><img src="../assets/header/phone1.svg" alt="phone"></li>
-                    <li class="social-item wa"><img src="../assets/header/whatsapp-logo1.svg" alt="wa"></li>
-                    <li class="social-item telegram"><img src="../assets/header/telegram-logo1.svg" alt="telegram"></li>
-                    <li class="social-item instagram"><img src="../assets/header/Vector.svg" alt="instagram"></li>
+                    <a href="tel:+78008008080"><li class="social-item phone-mob"><img src="../assets/header/phone1.svg" alt="phone"></li></a>
+                    <a href="#"><li class="social-item wa"><img src="../assets/header/whatsapp-logo1.svg" alt="wa"></li></a>
+                    <a href="#"><li class="social-item telegram"><img src="../assets/header/telegram-logo1.svg" alt="telegram"></li></a>
+                    <a href="https://instagram.com/nikiland.club?igshid=MzRlODBiNWFlZA=="><li class="social-item instagram"><img src="../assets/header/Vector.svg" alt="instagram"></li></a>
                 </ul>
             </div>
             </div>
