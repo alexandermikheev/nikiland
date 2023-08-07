@@ -64,13 +64,13 @@
             <div class="weekdays">
                 <h3 class="price-card-list-header">Прайс лист</h3>
                 <h3 class="weekdays-header">в будние дни</h3>
-                <div class="cost">30 мин - 300₽</div>
-                <div class="cost">1 час - 450₽ </div>
+                <div class="cost">30 мин - 400₽</div>
+                <div class="cost">1 час - 600₽ </div>
             </div>
             <div class="weekends">
                 <h3 class="weekends-header">в выходные дни</h3>
-                <div class="cost">30 мин - 400₽</div>
-                <div class="cost">1 час - 550₽</div>
+                <div class="cost">30 мин - 500₽</div>
+                <div class="cost">1 час - 700₽</div>
             </div>
             <div class="smail-grut-fil"></div>
             <div class="cloud"></div>
@@ -82,7 +82,7 @@
             <div class="price-card-aboniment-quantity">
                 <span>10</span>
                 <h3 class="card-aboniment-header">Сеансов</h3>
-                <p class="card-aboniment-header-paragraf">10 посещений по (1часу)-4500₽</p>
+                <p class="card-aboniment-header-paragraf">10 посещений по (1часу)-5000₽</p>
             </div>
             <div class="smail-grut-blue"></div>
         </div>
