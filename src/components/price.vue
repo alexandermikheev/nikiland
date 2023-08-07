@@ -82,7 +82,7 @@
             <div class="price-card-aboniment-quantity">
                 <span>10</span>
                 <h3 class="card-aboniment-header">Сеансов</h3>
-                <p class="card-aboniment-header-paragraf">10 посещений по (1часу)-5000₽</p>
+                <p class="card-aboniment-header-paragraf">10 посещений по ( 1 часу ) - 5000₽</p>
             </div>
             <div class="smail-grut-blue"></div>
         </div>

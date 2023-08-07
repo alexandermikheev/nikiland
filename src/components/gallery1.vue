@@ -76,7 +76,7 @@
     v-if="small"
     :modules="modules"
     :slides-per-view="4"
-    :space-between="50"
+    :space-between="40"
     navigation
     :rewind="true"
     @swiper="onSwiper"
@@ -131,6 +131,7 @@
   height: auto;
   border-radius: 40px;
   overflow: hidden;
+  margin-right: 30px;
 }
 
 .swiper-gallery-slide img {

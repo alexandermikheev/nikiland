@@ -57,7 +57,7 @@ export default{
 .services-card-header{
     color: #695C91;
     font-size: 14px;
-    font-family: Montserrat;
+    font-family: "Montserrat-bold";
     font-style: normal;
     font-weight: 700;
     line-height: 139.5%;

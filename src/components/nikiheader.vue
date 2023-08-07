@@ -168,6 +168,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 10px;
 }
 .phone-tel{
     font-size: 24px;
@@ -245,7 +246,7 @@ body {
     .menu__link {
         color: #FFF;
         font-family: Montserrat;
-        font-size: 16px;
+        font-size: 29px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -328,7 +329,7 @@ body {
         display: block;
     }
     .logo{
-        margin-right: 35%;
+        margin-right: 26%;
     }
     .menu {
         position: fixed;
@@ -341,6 +342,7 @@ body {
         background: url(../assets/header/menu-smail.svg) 80% 80%/35% no-repeat;
         background-color: #9D9D9D;
         display: block;
+        overflow: auto;
     }
     .menu__list {
         display: block;
@@ -354,7 +356,7 @@ body {
     .menu__link {
         color: #FFF;
         font-family: Montserrat;
-        font-size: 16px;
+        font-size: 29px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -377,7 +379,7 @@ body {
     .phone-tel{
         color: #FFF;
         font-family: "Montserrat";
-        font-size: 16px;
+        font-size: 29px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -388,7 +390,7 @@ body {
         display: block;
         color: #FFF;
         font-family: "Montserrat";
-        font-size: 16px;
+        font-size: 29px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -406,10 +408,11 @@ body {
         margin: 0;
         padding: 0;
         }
-    .social-items li:nth-child(n+2):nth-last-child(n+1){
+    .social-items li:nth-child(n+1):nth-last-child(n+1) {
         box-sizing: border-box;
-        padding-left: 29px;
-    }
+        padding-right: 29px !important;
+        padding-left: 0;
+        }
     .phone-mob{
             display: none;
     }

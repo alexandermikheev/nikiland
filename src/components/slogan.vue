@@ -38,7 +38,7 @@
     z-index: 99;
 }
 #slogan{
-    margin-top: 50px;
+    margin-top: 10%;
 }
 @keyframes ballAnimation {
   0% {
@@ -148,11 +148,18 @@
 
 }
 
-@media (min-width: 1201px) {}
+@media (min-width: 1201px) {
+    #slogan{
+        margin-top: 13%;
+    }
+    #slogan span {
+    width: 88%;
+    }
+}
 
 @media (min-width: 641px) and (max-width: 1200px) {
    .content-box{
-    margin-top: 30%;
+    margin-top: 27%;
     height: 411px;
    }
    .castle {
@@ -163,6 +170,11 @@
     right: 0;
 }
 
+}
+@media (min-width: 641px) and (max-width: 854px) {
+    #slogan{
+        margin-top: 20%;
+    }
 }
 
 @media (max-width: 640px) {
