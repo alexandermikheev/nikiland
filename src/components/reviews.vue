@@ -66,9 +66,9 @@
     <div class="reviews-card" v-if="small">
         <div class="reviews-card-item feedback-1">
             <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
-            <div class="reviews-card-place">ТЦ "Авиапарк"</div>
+            <div class="reviews-card-place">ТЦ "Саларис"</div>
         </div>
-        <div class="reviews-card-item feedback-2">
+        <!-- <div class="reviews-card-item feedback-2">
             <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
             <div class="reviews-card-place">ТЦ "Авиапарк"</div>
         </div>
@@ -87,7 +87,7 @@
         <div class="reviews-card-item feedback-6">
             <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
             <div class="reviews-card-place">ТЦ "Авиапарк"</div>
-        </div>
+        </div> -->
     </div>
 
     <swiper
@@ -107,10 +107,10 @@
     <swiper-slide class="swiper-reviews-slide">
         <div class="reviews-card-item feedback-6">
             <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
-            <div class="reviews-card-place">ТЦ "Авиапарк"</div>
+            <div class="reviews-card-place">ТЦ "Саларис"</div>
         </div>
     </swiper-slide>
-    <swiper-slide class="swiper-reviews-slide">
+    <!-- <swiper-slide class="swiper-reviews-slide">
         <div class="reviews-card-item feedback-2">
             <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
             <div class="reviews-card-place">ТЦ "Авиапарк"</div>
@@ -138,8 +138,8 @@
         <div class="reviews-card-item feedback-6">
             <div class="reviews-card-paragraf">Отлично отдохнули и отпраздновали день рождения дочери. Отличное место для детей и взрослых. Дети лазили в лабиринте их было видно, но не слышно!</div>
             <div class="reviews-card-place">ТЦ "Авиапарк"</div>
-        </div>
-    </swiper-slide>
+        </div> -->
+    <!-- </swiper-slide> -->
 
   </swiper>
     

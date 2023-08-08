@@ -3,13 +3,13 @@
         <div class="footer-box">
         <div class="footer-logo"></div>
         <div class="footer-phone">
-            <a class="footer-phone-tel footer-elem" href="tel:+78008008080">8-800-800-80-80</a>
+            <a class="footer-phone-tel footer-elem" href="tel:+79256270456">8-925-627-04-56</a>
             <a class="footer-elem" href="mailto:info@nikiland.club">info@nikiland.club</a>
             <div class="footer-social footer-elem">
                 <ul class="footer-social-items"> 
-                    <a href="tel:+78008008080"><li class="footer-social-item"><img src="../assets/header/phone1.svg" alt="phone"></li></a>
-                    <a href="wtsp.cc/78008008080"><li class="footer-social-item"><img src="../assets/header/whatsapp-logo1.svg" alt="wa"></li></a>
-                    <a href="https://t.me/88008008080"><li class="footer-social-item"><img src="../assets/header/telegram-logo1.svg" alt="telegram"></li></a>
+                    <a href="tel:+79256270456"><li class="footer-social-item"><img src="../assets/header/phone1.svg" alt="phone"></li></a>
+                    <a href="wtsp.cc/79256270456"><li class="footer-social-item"><img src="../assets/header/whatsapp-logo1.svg" alt="wa"></li></a>
+                    <a href="https://t.me/89256270456"><li class="footer-social-item"><img src="../assets/header/telegram-logo1.svg" alt="telegram"></li></a>
                     <a href="https://instagram.com/nikiland.club?igshid=MzRlODBiNWFlZA=="><li class="footer-social-item"><img src="../assets/header/Vector.svg" alt="instagram"></li></a>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
     display: flex;
     padding: 0;
 }
-.footer-social-items li:nth-child(n+2):nth-last-child(n+1){
+.footer-social-items a:nth-child(n+2):nth-last-child(n+1){
     box-sizing: border-box;
     padding-left: 29px;
 }

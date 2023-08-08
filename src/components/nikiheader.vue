@@ -17,7 +17,7 @@
                     </li>
                 </ul>
             <div class="phone">
-            <a class="phone-tel" href="tel:+78008008080">8-800-800-80-80</a>
+            <a class="phone-tel" href="tel:+79256270456">8-925-627-04-56</a>
             <a class="mail" href="mailto:info@nikiland.club">info@nikiland.club</a>
             <div class="social">
                 <ul class="social-items"> 
@@ -201,9 +201,9 @@ body {
     margin: 0;
     padding: 0;
 }
-.social-items li:nth-child(n+2):nth-last-child(n+1){
+.social-items a:nth-child(n+2):nth-last-child(n+1){
     box-sizing: border-box;
-    padding-left: 29px;
+    padding-left: 25px;
 }
 @media (min-width: 1201px) {}
 
@@ -230,15 +230,16 @@ body {
         padding: 75px 20px 20px 20px;
         transition: transform .5s;
         height: 100%;
-        background: url(../assets/header/menu-smail.svg) 80% 80%/35% no-repeat;
+        background: url(../assets/header/menu-smail.svg) 66% 42%/35% no-repeat;
         background-color: #9D9D9D;
         display: block;
+        overflow: auto;
     }
     .menu__list {
         display: block;
     }
     .menu__item{
-        height: 13vw;
+        height: 67.53px;
     }
     .menu__item a:hover{
         color: #695C91;
@@ -264,27 +265,29 @@ body {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        padding-top: 20px;
+        padding-top: 0;
         }
     .phone-tel{
         color: #FFF;
         font-family: "Montserrat";
-        font-size: 16px;
+        font-size: 23px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
         text-decoration: none;
+        padding-bottom: 10px;
         }
   
         .mail{
         display: block;
         color: #FFF;
         font-family: "Montserrat";
-        font-size: 16px;
+        font-size: 21px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
         text-decoration: none;
+        padding: 0 0 20px;
         }    
     .social-items{
         display: flex;
@@ -298,10 +301,11 @@ body {
         margin: 0;
         padding: 0;
         }
-    .social-items li:nth-child(n+2):nth-last-child(n+1){
+        .social-items a:nth-child(n+2):nth-last-child(n+1) {
         box-sizing: border-box;
-        padding-left: 29px;
-    }
+        padding-right: 29px !important;
+        padding-left: 0;
+        }
     .phone-mob{
             display: none;
     }
@@ -339,7 +343,7 @@ body {
         padding: 75px 20px 20px 20px;
         transition: transform .5s;
         height: 100%;
-        background: url(../assets/header/menu-smail.svg) 80% 80%/35% no-repeat;
+        background: url(../assets/header/menu-smail.svg) 79% 39%/35% no-repeat;
         background-color: #9D9D9D;
         display: block;
         overflow: auto;
@@ -348,7 +352,7 @@ body {
         display: block;
     }
     .menu__item{
-        height: 13vw;
+        height: 11vw;
     }
     .menu__item a:hover{
         color: #695C91;
@@ -384,6 +388,7 @@ body {
         font-weight: 600;
         line-height: normal;
         text-decoration: none;
+        padding: 0 0 10px;
         }
   
         .mail{
@@ -406,9 +411,9 @@ body {
         font-weight: 600;
         line-height: normal;
         margin: 0;
-        padding: 0;
+        padding: 20px 0;
         }
-    .social-items li:nth-child(n+1):nth-last-child(n+1) {
+    .social-items a:nth-child(n+2):nth-last-child(n+1) {
         box-sizing: border-box;
         padding-right: 29px !important;
         padding-left: 0;
