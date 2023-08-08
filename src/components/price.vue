@@ -72,7 +72,6 @@
                 <div class="cost">30 мин - 500₽</div>
                 <div class="cost">1 час - 700₽</div>
             </div>
-            <div class="smail-grut-fil"></div>
             <div class="cloud"></div>
             <div class="cloud1"></div>
             
@@ -89,6 +88,7 @@
 
     </div>
     <div class="price-footer">
+        <div class="smail-grut-fil"></div>
         <div class="price-footer-header">
             <h2>территория радости и веселья</h2>
         </div>
@@ -99,6 +99,19 @@
 </template>
 
 <style>
+@keyframes cloudanimaton {
+  0% {
+    position: absolute;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .price-card{
     display: flex;
     justify-content: space-evenly;
@@ -178,8 +191,8 @@
     background: url(../assets/smail-grut-fil.svg);
     width: 299px;
     height: 338px;
-    top: 400px;
-    left: -140px;
+    top: -198%;
+    left: 2%;
 }
 .smail-grut-blue{
     position: absolute;
@@ -196,6 +209,7 @@
     height: 21.415px;
     top: 530px; 
     left: 110px;
+    animation: cloudanimaton 1s linear infinite;
 }
 .cloud1{
     position: absolute;
@@ -206,6 +220,7 @@
     height: 45px;
     top: 450px; 
     left: 160px;
+    animation: cloudanimaton 1s linear infinite;
 }
 .price-card-list-header{
     margin: 0;
@@ -282,7 +297,8 @@
     background: url(../assets/smail-grut-fil.svg);
     width: 299px;
     height: 338px;
-    top: 400px;
+
+    top: -157%;
     left: 39px;
 }
 .smail-grut-blue{
@@ -309,18 +325,19 @@
     background: url(../assets/price-footer/yellow-smail-price.svg)  85% 55%/30% no-repeat;
 }
 .price-card-aboniment-quantity span {
-    font-size: 37px;
+    font-size: 90px;
+    background-color: #F7C400;
 }
 .price-card-aboniment-header, .card-aboniment-header {
     font-family: 'PoetsenOne';
     color: #676091;
-    font-size: 24px;
+    font-size: 36px;
 }
 .price-card-aboniment-header {
-    margin-left: 105px;
+    margin-left: 77px;
 }
 .card-aboniment-header-paragraf {
-    font-size: 14px;
+    font-size: 18px;
 }
 .price-card-list{
     background-size: 37%;
@@ -330,7 +347,7 @@
     position: absolute;
     background: url(../assets/smail-grut-fil.svg) no-repeat;
     background-size: 68%;
-    top: 121%;
+    top: -239%;
 }
 .cloud {
     top: 555px;
@@ -372,7 +389,7 @@
     background: url(../assets/price-footer/yellow-smail-price.svg) 144% 54%/81% no-repeat;
 }
 .price-card-aboniment-header {
-    margin-left: 26px;
+    margin-left: 43px;
 }
 .price-card-aboniment-quantity{
     margin-left: 10px;
@@ -382,7 +399,7 @@
     background: url(../assets/smail-grut-fil.svg);
     width: 299px;
     height: 338px;
-    top: 110%;
+    top: -198%;
     left: 39px;
 }
 .smail-grut-blue{
@@ -413,7 +430,9 @@
         margin-left: 0;
         text-align: center;
 }
-
+.price-card-aboniment-quantity span{
+    background-color: #F7C400;
+}
 }
 @media (min-width: 801px) and (max-width: 1000px){
     .price-card-aboniment {
@@ -425,18 +444,19 @@
     margin-left: 50px;
 }
 .price-card-aboniment-quantity span {
-    font-size: 63px;
+    font-size: 90px;
+    background-color: #F7C400;
 }
 .price-card-aboniment-header, .card-aboniment-header {
     font-family: 'PoetsenOne';
     color: #676091;
-    font-size: 24px;
+    font-size: 36px;
 }
 .price-card-aboniment-header {
-    margin-left: 61px;
+    margin-left: 108px;
 }
 .card-aboniment-header-paragraf {
-    font-size: 14px;
+    font-size: 18px;
 }
 .price-card-list{
     background-size: 45%;
@@ -446,7 +466,7 @@
     position: absolute;
     background: url(../assets/smail-grut-fil.svg) no-repeat;
     background-size: 45%;
-    top: 121%;
+    top: -157%;
 }
 .cloud {
     top: 534px;
@@ -475,18 +495,19 @@
     background: url(../assets/price-footer/yellow-smail-price.svg) 106% 54%/48% no-repeat;
 }
 .price-card-aboniment-quantity span {
-    font-size: 37px;
+    font-size: 90px;
+    background-color: #F7C400;
 }
 .price-card-aboniment-header, .card-aboniment-header {
     font-family: 'PoetsenOne';
     color: #676091;
-    font-size: 24px;
+    font-size: 36px;
 }
 .price-card-aboniment-header {
-    margin-left: 61px;
+    margin-left: 70px;
 }
 .card-aboniment-header-paragraf {
-    font-size: 14px;
+    font-size: 18px;
 }
 .price-card-list{
     background-size: 50%;
@@ -496,7 +517,7 @@
     position: absolute;
     background: url(../assets/smail-grut-fil.svg) no-repeat;
     background-size: 45%;
-    top: 121%;
+    top: -157%;
 }
 .cloud {
     top: 534px;
@@ -528,7 +549,7 @@
     background-size: 68%;
     width: 299px;
     height: 342px;
-    top: 113%;
+    top: -134%;
     left: 39px;
 }
 
@@ -542,7 +563,7 @@
     background-size: 40%;
     width: 299px;
     height: 342px;
-    top: 113%;
+    top: -79%;
     left: 39px;
 }
 
@@ -584,7 +605,7 @@
     position: absolute;
     background: url(../assets/smail-grut-fil.svg) no-repeat;
     background-size: 45%;
-    top: 121%;
+    top: -157%;
 }
 .cloud {
     top: 534px;
@@ -613,6 +634,7 @@
     align-items: flex-start;
     margin-top: 119%;
     background: url(../assets/price-footer/yellow-smail-price.svg) 106% 54%/48% no-repeat;
+    
 }
 .price-card-aboniment-quantity span {
     font-size: 37px;
@@ -635,6 +657,7 @@
     position: absolute;
     background: url(../assets/smail-grut-fil.svg) no-repeat;
     background-size: 45%;
+    top: -155%;
 }
 .cloud {
     top: 482px;

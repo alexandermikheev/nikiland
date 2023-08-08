@@ -1,6 +1,6 @@
 <script>
   // import Swiper core and required modules
-  import { Navigation, Pagination, Scrollbar, A11y, Virtual } from 'swiper/modules';
+  import { Navigation, Pagination, Scrollbar, A11y, Virtual, Autoplay } from 'swiper/modules';
 
   // Import Swiper Vue.js components
   import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -32,7 +32,7 @@
       return {
         onSwiper,
         onSlideChange,
-        modules: [Navigation, Pagination, Scrollbar, A11y, Virtual],
+        modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
       };
     },
 
@@ -82,6 +82,11 @@
     v-else
     :modules="modules"
     :slides-per-view="1"
+    :loop="true"
+    :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }"
     navigation
   >
     <swiper-slide class="swiper-slide-promotions mb"><img src="../assets/promo/1.png" alt=""></swiper-slide>

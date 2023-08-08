@@ -1,5 +1,5 @@
 <script>
-  import { Navigation, Pagination, Scrollbar, A11y, Virtual } from 'swiper/modules';
+  import { Navigation, Pagination, Scrollbar, A11y, Virtual, Autoplay } from 'swiper/modules';
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import 'swiper/css';
   import 'swiper/css/navigation';
@@ -26,7 +26,7 @@
       return {
         onSwiper,
         onSlideChange,
-        modules: [Navigation, Pagination, Scrollbar, A11y, Virtual],
+        modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
       };
     },
     methods : {
@@ -94,9 +94,13 @@
     v-else
     :modules="modules"
     :slides-per-view="1"
-    :space-between="50"
+    :space-between="10"
     navigation
-    :rewind="true"
+    :loop="true"
+    :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
   >
@@ -244,5 +248,37 @@
 .feedback-6{
     background-color: #DF5F26;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-reviews-slide{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: auto;
+  /* overflow: hidden; */
+  /* margin-right: 30px; */
+}
+
+.swiper-reviews-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 640px) {
+
+    .about-header{
+        width: 90%;
+    }
+    
+}
 </style>

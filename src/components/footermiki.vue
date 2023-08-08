@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="footer-box">
-        <div class="footer-logo"><img src="../assets/footer-logo.svg" alt="logo"></div>
+        <div class="footer-logo"></div>
         <div class="footer-phone">
             <a class="footer-phone-tel footer-elem" href="tel:+78008008080">8-800-800-80-80</a>
             <a class="footer-elem" href="mailto:info@nikiland.club">info@nikiland.club</a>
@@ -102,6 +102,11 @@
     line-height: 131%; /* 20.96px */
     text-decoration-line: underline;
 }
+.footer-logo{
+    background: url(../assets/footer-logo.svg) no-repeat;
+    height: 97px;
+    width: 391px;
+}
 
 @media (min-width: 641px) and (max-width: 1200px) {
     .footer-phone {
@@ -110,6 +115,11 @@
     margin-left: 8px;
     margin-right: 0; 
     flex-direction: column;
+}
+.footer-logo{
+    background: url(../assets/Rules-logo.svg) no-repeat;
+    height: 150px;
+    width: 176px;
 }
 }
 
@@ -120,6 +130,17 @@
     margin-left: 8px;
     margin-right: 0; 
     flex-direction: column;
+}
+.footer-logo{
+    background: url(../assets/Rules-logo.svg) no-repeat;
+    height: 150px;
+    width: 176px;
+}
+.footer-elem:nth-child(n+1){
+    margin-left: 0px;
+}
+.footer-phone a{
+    font-size: 16px;
 }
 }
 
@@ -137,7 +158,17 @@
 .footer {
     margin: 0 5px;
  }
-
+ .footer-logo{
+    background: url(../assets/Rules-logo.svg) no-repeat;
+    height: 150px;
+    width: 176px;
+}
+.footer-elem:nth-child(n+1){
+    margin-left: 0px;
+}
+.footer-phone a{
+    font-size: 16px;
+}
 }
 
 @media (min-width: 320px) and (max-width: 375px){
@@ -151,6 +182,19 @@
 .footer {
     margin: 0 5px;
  }
-
+ .footer-box{
+    width: 100%;
+}
+ .footer-logo{
+    background: url(../assets/Rules-logo.svg) no-repeat;
+    height: 150px;
+    width: 176px;
+}
+.footer-elem:nth-child(n+1){
+    margin-left: 0px;
+}
+.footer-phone a{
+    font-size: 16px;
+}
 }
 </style>

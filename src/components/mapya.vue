@@ -109,6 +109,10 @@
 .address{
   text-align: center;
 }
+.metro-mall{
+  color: #DF5F26;
+  text-align: center;
+}
 }
 
 </style>

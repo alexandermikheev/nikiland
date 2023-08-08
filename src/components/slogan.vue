@@ -182,12 +182,81 @@
 .content-box{
     margin-top: 35%;
    }
+   .content-box{
+    height: 411px;
+   }
 .castle {
     position: absolute;
     width: 375px;
     height: 151px;
     top: 0;
     right: 0;
+}
+.ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ball-1 {
+    top: 196%;
+    left: 121%;
+    background-image: url(../assets/slogan/smail.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 85.006px;
+    height: 87.909px;
+}
+
+.ball-2 {
+    top: 75%;
+    left: 110%;
+    background-image: url(../assets/slogan/smail1.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 166.423px;
+    height: 172.132px;
+}
+
+.ball-3 {
+    top: 110%;
+    left: 180%;
+    background-image: url(../assets/slogan/smail2.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 89.534px;
+    height: 92.581px;
+}
+.ball-4 {
+    top: 35%;
+    left: 125%;
+    background-image: url(../assets/slogan/smail3.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 98.699px;
+    height: 102.085px;
+}
+.ball-5 {
+    top: 60%;
+    left: 148%;
+    background-image: url(../assets/slogan/smail4.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 69.006px;
+    height: 69.037px;
+}
+.ball-6 {
+    top: 140%;
+    left: 150%;
+    background-image: url(../assets/slogan/smail5.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 112.644px;
+    height: 116.513px;
+}
+.ball-7 {
+    top: 90%;
+    left: 146%;
+    background-image: url(../assets/slogan/smail6.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 82.994px;
+    height: 85.81px;
 }
 }
 @media (min-width: 376px) and (max-width: 425px){
@@ -219,7 +288,74 @@
     right: 0;
 }
 .content-box {
-    height: 35%;
+    margin-top: 51%;
+    height: 415px;
+}
+.ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ball-1 {
+    top: 196%;
+    left: 236%;
+    background-image: url(../assets/slogan/smail.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 85.006px;
+    height: 87.909px;
+}
+
+.ball-2 {
+    top: 75%;
+    left: 217%;
+    background-image: url(../assets/slogan/smail1.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 166.423px;
+    height: 172.132px;
+}
+
+.ball-3 {
+    top: 110%;
+    left: 180%;
+    background-image: url(../assets/slogan/smail2.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 89.534px;
+    height: 92.581px;
+}
+.ball-4 {
+    top: 35%;
+    left: 164%;
+    background-image: url(../assets/slogan/smail3.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 98.699px;
+    height: 102.085px;
+}
+.ball-5 {
+    top: 60%;
+    left: 148%;
+    background-image: url(../assets/slogan/smail4.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 69.006px;
+    height: 69.037px;
+}
+.ball-6 {
+    top: 140%;
+    left: 163%;
+    background-image: url(../assets/slogan/smail5.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 112.644px;
+    height: 116.513px;
+}
+.ball-7 {
+    top: 38%;
+    left: 221%;
+    background-image: url(../assets/slogan/smail6.svg);
+    animation: ballAnimation 3s ease-in-out forwards;
+    width: 82.994px;
+    height: 85.81px;
 }
 }
 </style>

@@ -223,7 +223,7 @@
         margin-bottom: 10px;
    }
    .advantages-item span{
-        width: 70%;
+        width: 100%;
    }
    .advantages-list{
         margin-left: 10%;
