@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Host: http://nikiland.club/
+Sitemap: http://http://nikiland.club//пропишите здесь путь к sitemap.xml
+Sitemap: http://http://nikiland.club/
